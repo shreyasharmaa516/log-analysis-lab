@@ -14,9 +14,9 @@ def scan_log(file_path):
                     if word.lower() in line.lower():
                         print(f"Suspicious log [Line {i+1}]: {line.strip()}")
     except FileNotFoundError:
-        print("❌ Log file not found.")
+        print("Log file not found.")
     except Exception as e:
-        print(f"⚠️ Error: {e}")
+        print(f"Error: {e}")
 
 # Sample log file path
 log_file = "sample_log.txt"
